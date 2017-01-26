@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activities.QosimapActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarOnMap"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/bg_custom_default"
+        app:itemIconTint="@android:color/holo_red_dark">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qosimap"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textAllCaps="true"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"/>
+        </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_grey_1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/bg_custom_default">
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qosimap_marker_red"/>
+    <TextView
+        android:text="Tidak di anjurkan"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="11sp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/divider_grey_1"
+        />
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qosimap_marker_orange"/>
+    <TextView
+        android:text="Sebaiknya di hindari"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textColor="@color/divider_grey_1"
+        />
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qosimap_marker_yellow"/>
+    <TextView
+        android:text="Meragukan"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textColor="@color/divider_grey_1"
+        />
+
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qosimap_marker_green"/>
+    <TextView
+        android:text="Aman"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textColor="@color/divider_grey_1"
+        />
+</LinearLayout>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.pondokprogrammer.qosim.activities.QosimapActivity" />
+
+</LinearLayout>

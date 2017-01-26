@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/fahmiazian"
+                android:id="@+id/sosmed_picture"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:text="Ummi Hanni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:id="@+id/sosmed_fullname"
+                android:layout_toRightOf="@id/sosmed_picture"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:text="\@ummihani"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sosmed_username"
+                android:layout_below="@id/sosmed_fullname"
+                android:layout_toRightOf="@id/sosmed_picture"
+                android:textColor="#fd1494"
+
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/sosmed_count_comment"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sosmed_comments"
+                android:layout_toLeftOf="@id/sosmed_count_comment"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/sosmed_img_comment"
+                android:layout_marginRight="3dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="225"
+                android:id="@+id/sosmed_count_like"
+                android:layout_toLeftOf="@id/sosmed_img_comment"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="15dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sosmed_like"
+                android:layout_toLeftOf="@id/sosmed_count_like"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/sosmed_img_commen1t"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Just Now"
+                android:id="@+id/sosmed_time_post"
+                android:layout_alignParentRight="true"
+                android:textSize="13dp"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/desserts"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:id="@+id/sosmed_img_post"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada lectus vitae mauris aliquam, a sodales lorem commodo. Nulla pellentesque in justo et iaculis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "
+        android:id="@+id/sosmed_status"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+</LinearLayout>

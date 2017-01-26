@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_drawer_followers"
+            android:title=""
+            android:icon="@drawable/ic_supervisor_account"/>
+        <item
+            android:id="@+id/menu_drawer_messages"
+            android:title=""
+            android:icon="@drawable/ic_explore"/>
+        <item
+            android:id="@+id/menu_drawer_checkmap"
+            android:title=""
+            android:icon="@drawable/ic_action_location"/>
+        <item
+            android:id="@+id/menu_drawer_qosimap"
+            android:title=""
+            android:icon="@drawable/ic_action_map"/>
+        <item
+            android:id="@+id/menu_drawer_infaq"
+            android:title=""
+            android:icon="@drawable/ic_payment"/>
+        <item
+            android:id="@+id/menu_drawer_tagged"
+            android:title=""
+            android:icon="@drawable/ic_action_flag"/>
+        <item
+            android:id="@+id/menu_drawer_qiblat"
+            android:title=""
+            android:icon="@android:drawable/ic_menu_compass"/>
+        <item
+            android:id="@+id/menu_drawer_settings"
+            android:title=""
+            android:icon="@drawable/ic_action_gear"/>
+        <item
+            android:id="@+id/menu_drawer_logout"
+            android:title=""
+            android:icon="@drawable/ic_settings_power"
+            app:itemIconTint="@android:color/white"
+            android:titleCondensed="LOGOUT"
+            />
+    </group>
+</menu>

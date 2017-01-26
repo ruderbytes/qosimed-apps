@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#013563"
+    >
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_grey_1"
+                    android:layout_centerVertical="true"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ASHAR"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider_grey_1"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14 Maret 2016"
+                        android:textColor="#fff"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:background="#013563"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/jam_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:text="15:10"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider_grey_1"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Waktu Sampai Adzan"
+                        android:textColor="#fff"
+                        android:layout_centerHorizontal="true"
+                        android:background="#013563"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/count_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00:40:52"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:textSize="27dp"
+                    android:layout_marginTop="7dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"
+                android:background="#e4e2e4">
+
+
+
+                <ListView
+                    android:id="@+id/jadwal_sholat_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="---------------------"/>
+                <Button
+                    android:background="@drawable/btn_find_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Temukan Lokasi Anda"
+                    android:textColor="#fff"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

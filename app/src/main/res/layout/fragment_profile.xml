@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#b1b0b0"
+    tools:context="com.pondokprogrammer.qosim.fragments.ProfileFragment">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:background="@drawable/background_profile"
+                >
+                <RelativeLayout
+                    android:id="@+id/profile_layout_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <com.pondokprogrammer.qosim.classes.CricleImageView
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:id="@+id/profile_img_center"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fahmiazian"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/qosimed_left_ic"
+                        android:layout_toLeftOf="@id/profile_img_center"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/qosimed_right_ic"
+                        android:layout_toRightOf="@id/profile_img_center"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/profile_fullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fahmi Azain"
+                    android:textColor="#fff"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/profile_layout_center"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/profile_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JEMBER"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:layout_below="@id/profile_fullname"
+                    android:layout_centerHorizontal="true"/>
+                <LinearLayout
+                    android:id="@+id/profile_stories"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_city"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="872"
+                            android:textSize="20sp"
+                            android:textColor="#fff"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PUBLIC POSTS"
+                            android:textColor="#fff"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="18.1k"
+                            android:textSize="20sp"
+                            android:textColor="#fff"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FOLLOWERS"
+                            android:textColor="#fff"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11.2K"
+                            android:textSize="20sp"
+                            android:textColor="#fff"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FOLLOWING"
+                            android:textColor="#fff"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.pondokprogrammer.qosim.classes.GridviewFullHeight
+                android:id="@+id/gridView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isScrollContainer="false"
+                    android:gravity="center"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:layout_marginTop="3dp"/>
+                <!--<GridView-->
+                    <!--android:id="@+id/gridView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="225dp"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:numColumns="3"/>-->
+
+                <!--android:columnWidth="100dp"-->
+                <!--android:drawSelectorOnTop="true"-->
+                <!--android:gravity="center"-->
+                <!--android:numColumns="auto_fit"-->
+                <!--android:stretchMode="columnWidth"-->
+                <!--android:verticalSpacing="5dp"-->
+                <!--android:focusable="true"-->
+                <!--android:clickable="true"-->
+            </LinearLayout>
+
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

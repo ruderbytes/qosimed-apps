@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context="com.pondokprogrammer.qosim.activities.QosimedAddActivity">
+
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Name of Place"
+        android:textColor="#000"
+        android:popupBackground="#000"
+        android:drawableRight="@android:drawable/ic_menu_compass"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:hint="Comment"
+        android:gravity="start"
+        android:drawableRight="@android:drawable/sym_action_chat"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="3"
+        android:layout_marginBottom="15dp"
+        android:background="#dedede">
+
+        <ImageView
+            android:id="@+id/addNew"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:src="@drawable/plus_circle_outline"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/capturedImage"/>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Qosimed This"
+        android:id="@+id/btnCamera"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_type_1"
+        android:textColor="#ffd3ffe5"
+        android:textSize="17dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="100dp"/>
+</RelativeLayout>
+
+
+</LinearLayout>

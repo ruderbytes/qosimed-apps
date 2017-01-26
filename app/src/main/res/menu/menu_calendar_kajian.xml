@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.CalendarFragment">
+    <item
+        android:icon="@drawable/ic_public_white_36dp"
+        android:id="@+id/qosimed_action_notification"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="always" />
+</menu>

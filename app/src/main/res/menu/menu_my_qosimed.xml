@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.MyQosimedFragment">
+    <item
+        android:icon="@drawable/ic_add_white_36dp"
+        android:id="@+id/qosimed_action_plus"
+        android:orderInCategory="100"
+        android:title="Add Qosimed"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/qosimap_marker_radius_36dp"
+        android:id="@+id/qosimed_action_location"
+        android:orderInCategory="100"
+        android:title="Qosimap"
+        app:showAsAction="always" />
+</menu>
